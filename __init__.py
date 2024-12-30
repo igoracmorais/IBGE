@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyMxekUX0BdVclhn8j2QbDcd",
+      "authorship_tag": "ABX9TyOD2+xO6SCsLq5aK4OMsOV8",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -33,7 +33,14 @@
         "id": "rvoCvutGWFxz"
       },
       "outputs": [],
-      "source": []
+      "source": [
+        "\"\"\"PNADcIBGE: Ferramentas para manipular dados da PNAD Contínua no Python.\"\"\"\n",
+        "from .download import download_pnadc, extract_zip\n",
+        "from .read import load_pnadc_txt\n",
+        "from .process import label_variables, calculate_unemployment_rate\n",
+        "\n",
+        "__all__ = [\"download_pnadc\", \"extract_zip\", \"load_pnadc_txt\", \"label_variables\", \"calculate_unemployment_rate\"]"
+      ]
     }
   ]
 }
